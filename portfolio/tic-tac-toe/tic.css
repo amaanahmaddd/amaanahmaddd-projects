@@ -40,9 +40,10 @@ body {
   }
 }
 
-h1{
-    color: whitesmoke;
+h1 {
+  color: whitesmoke;
 }
+
 .game {
   height: 60vmin;
   width: 60vmin;
@@ -65,22 +66,14 @@ h1{
   cursor: pointer;
 }
 
-#reset-btn {
+#reset-btn, #new-btn {
   padding: 1rem;
   font-size: 1.25rem;
   background-color: #191913;
   color: #fff;
   border-radius: 1rem;
   border: none;
-}
-
-#new-btn {
-  padding: 1rem;
-  font-size: 1.25rem;
-  background-color: #191913;
-  color: #fff;
-  border-radius: 1rem;
-  border: none;
+  margin: 0.5rem;
 }
 
 #msg {
@@ -99,4 +92,53 @@ h1{
 
 .hide {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .letter {
+    font-size: 60px;
+  }
+
+  .game {
+    height: 80vmin;
+    width: 80vmin;
+    gap: 1vmin;
+  }
+
+  .box {
+    height: 22vmin;
+    width: 22vmin;
+    font-size: 6vmin;
+  }
+
+  #msg {
+    font-size: 4vmin;
+  }
+}
+
+@media (max-width: 480px) {
+  .letter {
+    font-size: 40px;
+  }
+
+  .game {
+    height: 90vmin;
+    width: 90vmin;
+    gap: 0.5vmin;
+  }
+
+  .box {
+    height: 28vmin;
+    width: 28vmin;
+    font-size: 4vmin;
+  }
+
+  #msg {
+    font-size: 3vmin;
+  }
+
+  #reset-btn, #new-btn {
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
 }

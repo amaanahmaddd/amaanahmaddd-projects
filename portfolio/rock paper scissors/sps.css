@@ -65,3 +65,91 @@ img {
   border-radius: 1rem;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+    height: 3rem;
+    line-height: 3rem;
+  }
+
+  .choice {
+    height: 120px;
+    width: 120px;
+  }
+
+  img {
+    height: 110px;
+    width: 110px;
+  }
+
+  .choices {
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+
+  .score-board {
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+
+  #user-score,
+  #comp-score {
+    font-size: 3rem;
+  }
+
+  .msg-container {
+    margin-top: 2rem;
+  }
+
+  #msg {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.2rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .choice {
+    height: 90px;
+    width: 90px;
+  }
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
+
+  .choices {
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .score-board {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  #user-score,
+  #comp-score {
+    font-size: 2rem;
+  }
+
+  .msg-container {
+    margin-top: 1rem;
+  }
+
+  #msg {
+    font-size: 1.2rem;
+    padding: 0.3rem;
+  }
+}
