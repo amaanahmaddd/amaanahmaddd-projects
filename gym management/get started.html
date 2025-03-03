@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership Registration - AllFit</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Knewave&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+        body {
+            font-family: "Knewave", system-ui ;
+            font-weight: lighter;
+            word-spacing: 1px;
+            color: white;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            background-color: hsl(12, 86%, 40%);
+        }
+
+        header {
+            background-color: hsl(12, 76%, 23%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            box-sizing: border-box;
+        }
+
+        button {
+            font-family:"Knewave", system-ui;
+            background: hsl(12, 86%, 40%);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: hsl(12, 88%, 20%);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: hsl(12, 86%, 40%);
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <link rel="shortcut icon" href="images/gymicon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+    <h1>Gym Membership Registration</h1>
+</header>
+
+<div class="container">
+    <form>
+        <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+            <label for="membership-type">Membership Type</label>
+            <select id="membership-type" name="membership-type" required>
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+                <option value="vip">VIP</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <button type="submit">Register</button>
+        </div>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2025 Gym. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
