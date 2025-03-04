@@ -31,14 +31,14 @@ body {
   --white_10: hsl(0, 0%, 100%, 0.1);
   --black_10: hsl(0, 0%, 0%, 0.1);
   --white: hsl(0, 0%, 100%);
-
+  /* font size */
   --fs-1: 3.8rem;
   --fs-2: 3rem;
   --fs-3: 2.5rem;
   --fs-4: 2rem;
   --fs-5: 1.8rem;
   --fs-6: 1.5rem;
-
+  /* Font weight */
   --fw-900: 900;
   --fw-800: 800;
   --fw-700: 700;
